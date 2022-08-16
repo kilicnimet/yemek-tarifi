@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yemek Tarifi</title>
 </head>
+<!-- sayfanın tamamına arkaplan rengi, yazı tipi ve yazı boyutu verdim -->
 <body style="background-color: beige;font-size: smaller; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<!-- sayfayı header ve section olarak ayırdım çünkü header sola dayalı duruyor. tarif ismi, tarif görseli ve kısa açıklama burada yazıyor -->
+<!-- headerla section arasında 20 piksel boşluk verdim -->
+<header style="margin-bottom:20px ;">
     <h1><strong><em>Közlenmiş Patlıcan Salatası</em></strong> </h1>
     <img src="https://cdn.yemek.com/mnresize/1250/833/uploads/2022/08/kozlenmis-patlican-salatasi-serap.jpg" alt="Közlenmiş Patlıcan Salatası" width="600">
     <p><strong><em>Salata sevenlere nefis bir tarif olan köz patlıcan salatasını denemelerini öneriyoruz. Ana yemeklerinizin yanına çok yakışacak bu lezzeti kaçırmayın.</em></strong></p>
     <p><strong>Tarif:</strong> Serap Akgün</p>
-
+</header>
+<!-- section genişliğini %50 dediğimde sayfanın yarısını kapladı. margin auto diyerek de sağdan soldan eşit boşluk vererek section bölümünü ortaladım -->
+<section style="width:50%; margin:auto;">
+    <!-- span diyerek yazının sadece bir bölümüne stil tanımlayabildim -->
     <p><u><span style="color: red ;"><strong>KAÇ KİŞİLİK:</strong></span> 2 kişilik</u>  |  <u><span style="color: red ;"><strong>HAZIRLAMA SÜRESİ:</span></strong> 5 dakika</u>   |  <u><span style="color: red ;"><strong>PİŞİRME SÜRESİ:</span></strong> 10 dakika</u> </p>
-<section>
+    <!-- border radius ile yazının arkaplanındaki renklerin köşelerini yuvarlaklaştırdım. satırı kaplamasın diye fit-content ile sadece yazı kadar renklendirdim. -->
     <h2 style="border-radius: 10px; display:block; background-color: red; width: fit-content; color: azure;">Közlenmiş Patlıcan Salatası Tarifi İçin Malzemeler</h2>
+    <!-- liste öğeleri arasına yazı boyutunun 1,6 katı kadar satır boşluğu verdim. çok bitişik olmaması için artırdım -->
     <ul style="line-height: 1.6;">
         <li>2 adet patlıcan</li>
         <li>2 adet yeşil biber</li>
@@ -26,7 +34,9 @@
         <li>1/2 tatlı kaşığı pul biber</li>
         <li>1/2 çay bardağı zeytinyağı</li>
     </ul>
+    <!-- border radius ile yazının arkaplanındaki renklerin köşelerini yuvarlaklaştırdım. satırı kaplamasın diye fit-content ile sadece yazı kadar renklendirdim. -->
     <h2 style="border-radius: 10px; display:block; background-color: red; width: fit-content; color: azure;">Közlenmiş Patlıcan Salatası Nasıl Yapılır?</h2>
+    <!-- liste öğeleri arasına yazı boyutunun 1,6 katı kadar satır boşluğu verdim. çok bitişik olmaması için artırdım -->
     <ol style="line-height: 1.6;">
         <li>Patlıcan ve yeşil biberleri yıkayıp kurulayın. Patlıcanları bıçak ile delin. Fırında veya közmatikte közleyin.</li>
         <li>Közlenen patlıcan ve biberlerin kabuklarını soyup küp küp doğrayın.</li>
@@ -35,6 +45,7 @@
         <li>Sosu için, limon suyu, tuz, pul biber ve 1/2 çay bardağı zeytinyağı bir kasede karıştırıp salataya gezdirin, salatayı karıştırıp sunum tabağına alın.</li>
     </ol>
 </section>
+<!-- afiyet olsun yazısını monospace font ile görüntüledim. yazıyı ekranın sağına hizalattım. 4em diyerek bulunduğu ekran boyutuna göre değişik ölçülerde gözükmesini sağladım. -->
     <p style="font-family:monospace; font-size: 4em;  text-align: right;">Afiyet olsun.</p>
 </body>
 </html>
